@@ -21,37 +21,103 @@ Feel free to try it out and give your feedback.
 
 ## Snippets
 
+<br />
+
+### Array
+
 | Snippet             | Details                                      |
 | ------------------- | -------------------------------------------- |
 | `:array[string]`    | Declaration of a string array                |
 | `:array[object]`    | Declaration of an array of objects           |
+
+<br />
+
+### Array Methods
+
+| Snippet             | Details                                      |
+| ------------------- | -------------------------------------------- |
 | `:find`             | Returns information                          |
 | `:findIndex`        | Returns the index of an existing information |
 | `:filter`           | Filter a list of data                        |
 | `:each`             | Returns a/list of filtered items             |
 | `:map`              | Returns a new instance of an array, modified |
 | `:reduce`           | Returns a single return value                |
-| `:for[of]`          | Execute a logic for each item of an object   |
+
+<br />
+
+### Objects
+
+| Snippet             | Details                                      |
+| ------------------- | -------------------------------------------- |
 | `:object`           | Data collection (key, value)                 |
-| `:dst[object]`      | Object destructuring                         |
-| `:dst[array]`       | Array destructuring                          |
+
+<br />
+
+### Functions
+
+| Snippet             | Details                                      |
+| ------------------- | -------------------------------------------- |
 | `:fnc`              | Function declaration                         |
 | `:arrow[short]`     | Short version Arrow Function                 |
 | `:arrow[named]`     | Named Arrow Function                         |
 | `:arrow[anonymous]` | Anonymous Arrow Function                     |
-| `:log`              | Print to console                             |
+
+<br />
+
+### Desctructuring
+
+| Snippet             | Details                                      |
+| ------------------- | -------------------------------------------- |
+| `:dst[object]`      | Object destructuring                         |
+| `:dst[array]`       | Array destructuring                          |
+
+<br />
+
+### Loops
+
+| Snippet             | Details                                      |
+| ------------------- | -------------------------------------------- |
+| `:for[of]`          | Execute a logic for each item of an object   |
+
+<br />
+
+### Imports and Exports
+
+| Snippet             | Details                                      |
+| ------------------- | -------------------------------------------- |
 | `:im[named]`        | Named Import                                 |
 | `:im[default]`      | Default Import                               |
 | `:ex[named]`        | Named Export                                 |
 | `:ex[default]`      | Default Export                               |
-| `:use[effect]`      | React effect hook                            |
 | `:im[route]`        | Component Imports - React Router Dom         |
 | `:im[cssModule]`    | Import Module CSS                            |
-| `:styled`           | Styled Components                            |
+
+<br />
+
+### Components
+
+| Snippet             | Details                                      |
+| ------------------- | -------------------------------------------- |
 | `:rfc`              | React function component                     |
 | `:rfc[t]`           | React function component TypeScript          |
-| `:interface`        | Interface TypeScript                         |
+| `:styled`           | Styled Components                            |
 
+<br />
+
+### Hooks
+
+| Snippet             | Details                                      |
+| ------------------- | -------------------------------------------- |
+| `:use[effect]`      | React effect hook                            |
+
+<br />
+
+### Utilities
+
+| Snippet             | Details                                      |
+| ------------------- | -------------------------------------------- |
+| `:log`              | Print to console                             |
+| `:interface`        | Interface TypeScript                         |
 
 <br />
 
