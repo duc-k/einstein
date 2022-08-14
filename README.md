@@ -3,8 +3,6 @@
   <h1>Einstein</h1>
 </div>
 
-
-
 Einstein is a utility snippet package for JavaScript, TypeScript, and React. It was developed to make the development process more productive.
 
 It is in beta phase, new properties, methods, classes, etc. are still being implemented.
@@ -21,8 +19,6 @@ Feel free to try it out and give your feedback.
 
 ## Snippets
 
-<br />
-
 ### Array
 
 | Snippet             | Details                                      |
@@ -30,7 +26,6 @@ Feel free to try it out and give your feedback.
 | `:array[string]`    | Declaration of a string array                |
 | `:array[object]`    | Declaration of an array of objects           |
 
-<br />
 
 ### Array Methods
 
@@ -43,7 +38,11 @@ Feel free to try it out and give your feedback.
 | `:map`              | Returns a new instance of an array, modified |
 | `:reduce`           | Returns a single return value                |
 
-<br />
+### Class
+
+| Snippet             | Details                                      |
+| ------------------- | -------------------------------------------- |
+| `:class`            | Class TypeScript                             |
 
 ### Objects
 
@@ -51,18 +50,16 @@ Feel free to try it out and give your feedback.
 | ------------------- | -------------------------------------------- |
 | `:object`           | Data collection (key, value)                 |
 
-<br />
 
 ### Functions
 
 | Snippet             | Details                                      |
 | ------------------- | -------------------------------------------- |
 | `:fnc`              | Function declaration                         |
-| `:arrow[short]`     | Short version Arrow Function                 |
 | `:arrow[named]`     | Named Arrow Function                         |
 | `:arrow[anonymous]` | Anonymous Arrow Function                     |
+| `:arrow[short]`     | Short version Arrow Function                 |
 
-<br />
 
 ### Desctructuring
 
@@ -71,7 +68,6 @@ Feel free to try it out and give your feedback.
 | `:dst[object]`      | Object destructuring                         |
 | `:dst[array]`       | Array destructuring                          |
 
-<br />
 
 ### Loops
 
@@ -79,7 +75,6 @@ Feel free to try it out and give your feedback.
 | ------------------- | -------------------------------------------- |
 | `:for[of]`          | Execute a logic for each item of an object   |
 
-<br />
 
 ### Imports and Exports
 
@@ -92,7 +87,6 @@ Feel free to try it out and give your feedback.
 | `:im[route]`        | Component Imports - React Router Dom         |
 | `:im[cssModule]`    | Import Module CSS                            |
 
-<br />
 
 ### Components
 
@@ -102,22 +96,29 @@ Feel free to try it out and give your feedback.
 | `:rfc[t]`           | React function component TypeScript          |
 | `:styled`           | Styled Components                            |
 
-<br />
 
 ### Hooks
 
 | Snippet             | Details                                      |
 | ------------------- | -------------------------------------------- |
+| `:use[state]`       | React state hook                             |
 | `:use[effect]`      | React effect hook                            |
+| `:use[memo]`        | React memo hook                              |
+| `:use[callback]`    | React callback hook                          |
+| `:use[ref]`         | React ref hook                               |
+| `:use[context]`      | React context hook                           |
+| `:use[reducer]`     | React reducer hook                           |
 
-<br />
 
 ### Utilities
 
 | Snippet             | Details                                      |
 | ------------------- | -------------------------------------------- |
 | `:log`              | Print to console                             |
+| `:fragment`         | React Fragment                               |
 | `:interface`        | Interface TypeScript                         |
+| `:type`             | Type TypeScript                              |
+| `:enum`             | Enum TypeScript                              |
 
 <br />
 
