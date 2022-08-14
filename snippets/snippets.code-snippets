@@ -1,0 +1,246 @@
+{
+  "Print to console": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":log",
+    "body": [
+      "console.log($1);",
+      "$2"
+    ]
+  },
+  "Function Statement": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":fnc",
+    "body": [
+      "function ${1:name}(${2:params}) {",
+      "  return $3;",
+      "};",
+      "",
+      "${1:name}(${5:args});"
+    ]
+  },
+  "Anonymous Arrow Function": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":arrow[anonymous]",
+    "body": [
+      "(${1:params}) => {",
+      "  return $2;",
+      "};",
+    ]
+  },
+  "Named Arrow Function": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":arrow[named]",
+    "body": [
+      "const $1 = (${2:params}) => {",
+      "  return $3;",
+      "};",
+      "",
+      "$1(${4:args});"
+    ]
+  },
+  "Short Arrow Function": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":arrow[short]",
+    "body": [
+      "${1:params} => $2;"
+    ]
+  },
+  "Destructuring Array": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":dst[array]",
+    "body": [
+      "const [${1:name}] = ${2:array};",
+    ]
+  },
+  "Destructuring Object": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":dst[object]",
+    "body": [
+      "const {${1:name}} = ${2:object};",
+    ]
+  },
+  "React Router Dom":{
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":im[route]",
+    "body": [
+      "import { ${1:Routes} } from 'react-router-dom';",
+    ]
+
+  },
+  "CSS Module": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":im[cssModule]",
+    "body": [
+      "import styles from './styles.module.css';",
+    ]
+  },
+  "Styled Component": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":styled",
+    "body": [
+      "import styled from 'styled-components';",
+      "",
+      "const ${1:name} = styled.${2:tag}`",
+      "  ${3:style}",
+      "`;",
+    ]
+  },
+  "useEffect": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":use[effect]",
+    "body": [
+      "useEffect(() => {",
+      "  $1",
+      "}, [${2:args}]);"
+    ]
+  },
+  "React Function Component TypeScript": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":rfc[t]",
+    "body": [
+      "import { useState } from 'react';",
+      "",
+      "type ${TM_FILENAME_BASE}Props = {",
+      "  $3",
+      "}",
+      "",
+      "export default function ${TM_FILENAME_BASE}({$4}: ${TM_FILENAME_BASE}Props) {",
+      "  const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue});",
+      "",
+      "  return (",
+      "    <div>${5:Hello}</div>",
+      "  )",
+      "}",
+      "",
+    ]
+  },
+  "React Function Component": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":rfc",
+    "body": [
+      "import { useState } from 'react';",
+      "",
+      "export default function ${TM_FILENAME_BASE}({$4}) {",
+      "  const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:initialValue});",
+      "",
+      "  return (",
+      "    <div>${5:Hello}</div>",
+      "  )",
+      "}",
+      "",
+    ]
+  },
+  "Import named": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":im[named]",
+    "body": [
+      "import { ${1:name} } from '${2:module}';"
+    ]
+  },
+  "Export named": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":ex[named]",
+    "body": [
+      "export $1;"
+    ]
+  },
+  "Import default": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":im[default]",
+    "body": [
+      "import ${1:name} from '${2:module}';"
+    ]
+  },
+  "Export default": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":ex[default]",
+    "body": [
+      "export default $1;"
+    ],
+  },
+  "For Each": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":each",
+    "body": [
+      "${1:array}.forEach(${2:item} => $4);"
+    ]
+  },
+  "Map": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":map",
+    "body": [
+      "${1:array}.map(${2:item} => ${3:return});"
+    ]
+  },
+  "Filter": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":filter",
+    "body": [
+      "${1:array}.filter(${2:item} => $3);"
+    ]
+  },
+  "Find": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":find",
+    "body": [
+      "${1:array}.find(${2:item} => $3);"
+    ]
+  },
+  "Find Index": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":findIndex",
+    "body": [
+      "${1:array}.findIndex(${2:item} => $3);"
+    ]
+  },
+  "Reduce": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":reduce",
+    "body": [
+      "${1:array}.reduce((${2:accumulator}, ${3:current}) => {",
+      "  $5, ${6:initialValue}",
+      "});"
+    ]
+  },
+  "For Of": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":for[of]",
+    "body": [
+      "for (const ${1:item} of ${2:array}) {",
+      "  $3",
+      "}"
+    ]
+  },
+  "String array": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":array[string]",
+    "body": [
+      "const ${1:array} = ['${2:item}', '${3:item}'];"
+    ]
+  },
+  "Object array": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":array[object]",
+    "body": [
+      "const ${1:array} = [{${2:key}: ${3:value}}];"
+    ]
+  },
+  "Object Statement":{
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":object",
+    "body": [
+      "const ${1:object} = {",
+      "  ${2:key}: ${3:value}",
+      "};",
+    ]
+  },
+  "Interface": {
+    "scope": "typescript,typescriptreact,javascript,javascriptreact",
+    "prefix": ":interface",
+    "body": [
+      "interface ${TM_FILENAME_BASE} {",
+      "  ${3:prop}: ${4:type};",
+      "}",
+    ]
+  },
+}
