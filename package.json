@@ -48,6 +48,14 @@
       {
         "language": "typescriptreact",
         "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "html",
+        "path": "./snippets/snippets.code-snippets"
+      },
+      {
+        "language": "css",
+        "path": "./snippets/snippets.code-snippets"
       }
     ]
   }
