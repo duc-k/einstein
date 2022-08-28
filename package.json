@@ -3,8 +3,11 @@
   "displayName": "Einstein",
   "description": "Awesome Snippets",
   "homepage": "https://github.com/duc-k/einstein",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "publisher": "Ricardo Brito",
+  "scripts": {
+    "package": "vsce package --out ./bin/einstein.vsix"
+  },
   "author": {
     "name": "Ricardo",
     "email": "duc-k@mail.com"
@@ -30,7 +33,7 @@
     "javascript",
     "typescript"
   ],
-  "icon": "einstein.png",
+  "icon": "icon.png",
   "contributes": {
     "snippets": [
       {
